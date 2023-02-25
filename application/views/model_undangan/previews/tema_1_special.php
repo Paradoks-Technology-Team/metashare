@@ -30,7 +30,7 @@
 	<script src="<?= base_url() ?>assets/vendor/aos/dist/aos.js"></script>
 
 
-	<title>Tema 1 Basic</title>
+	<title>Tema 1 Special</title>
 
 
 	<style>
@@ -121,7 +121,6 @@
 			font-family: "MontserratBold";
 		}
 
-
 		.font-RadicalsDemo {
 			font-family: "RadicalsDemo";
 		}
@@ -142,7 +141,7 @@
 	<!-- Demo Watermark -->
 	<div class="">
 		<div class="fixed z-50 top-1 right-1 lg:top-2 lg:right-2">
-			<img class="w-20 lg:w-28" src="<?= base_url() ?>assets/icons/app/watermark_demo.svg" alt="">
+			<img class="w-20 lg:w-28" src="<?= base_url('assets/icons/app/watermark_demo.svg') ?>" alt="">
 		</div>
 	</div>
 	<!-- Demo Watermark End -->
@@ -201,7 +200,6 @@
 						<line x1="5.63965" y1="6.48639" x2="16.3684" y2="6.48639" stroke-linecap="round" />
 						<line x1="5.63965" y1="4.15283" x2="13.1696" y2="4.15283" stroke-linecap="round" />
 					</svg>
-
 				</div>
 			</a>
 		</div>
@@ -213,16 +211,17 @@
 		<div class="justify-between w-10 md:w-16 lg:w-12 mx-auto lg:py-3 block lg:mx-0 lg:ml-5">
 			<button class="w-full h-full bg-amber-50 shadow-lg rounded-full border border-teal-600/80 hover:bg-amber-100 focus:bg-amber-100 justify-center inline-block text-center pt-2 pb-2 mb-3" data-bs-toggle="modal" data-bs-target="#modalGiftCard">
 				<div class="flex">
-					<img class="mx-auto my-auto w-[20px] h-[20px] 2xs:w-[24px] 2xl:h-[24px] 1xs:w-[28px] 1xl:h-[28px] md:w-10 md:h-10 lg:w-[26px] lg:h-[26px]" src="<?= base_url() ?>assets/icons/tema1/floating_gift.svg" alt="">
+					<img class="mx-auto my-auto w-[20px] h-[20px] 2xs:w-[24px] 2xl:h-[24px] 1xs:w-[28px] 1xl:h-[28px] md:w-10 md:h-10 lg:w-[26px] lg:h-[26px]" src="<?= base_url('assets/icons/tema1/floating_gift.svg') ?>" alt="">
 				</div>
 			</button>
 			<button class="w-full bg-amber-50 shadow-lg border border-tema1-pink/80 rounded-full hover:bg-amber-100 focus:bg-amber-100 justify-center inline-block text-center pt-2 pb-2 mb-2">
 				<div class="flex">
-					<img class="mx-auto my-auto w-[20px] h-[20px] 2xs:w-[24px] 2xl:h-[24px] 1xs:w-[28px] 1xl:h-[28px] md:w-10 md:h-10 lg:w-[26px] lg:h-[26px] animate-spin-slow" src="<?= base_url() ?>assets/icons/tema1/floating_music_play.svg" alt="" id="iconMusic">
+					<img class="mx-auto my-auto w-[20px] h-[20px] 2xs:w-[24px] 2xl:h-[24px] 1xs:w-[28px] 1xl:h-[28px] md:w-10 md:h-10 lg:w-[26px] lg:h-[26px] animate-spin-slow" src="<?= base_url('assets/icons/tema1/floating_music_play.svg') ?>" alt="" id="iconMusic">
 				</div>
 
 				<audio id="song" loop>
-					<source src="<?= base_url() ?>assets/music/MarryYourDaughter.mp3" type="audio/mp3">
+					<!-- Source music background -->
+					<source src="<?= base_url('assets/music/MarryYourDaughter.mp3') ?>" type="audio/mp3">
 				</audio>
 			</button>
 		</div>
@@ -231,8 +230,7 @@
 
 	<!-- Sampul -->
 	<div class="sampul text-center z-0 bg-gradient-to-t from-indigo-100 via-red-100 to-yellow-50  min-h-[100vh] max-h-max" id="sampul">
-		<img src="<?= base_url() ?>assets/ilustrations/tema1/sampul_ils1.png" class="absolute opacity-80 w-14 2xs:w-20 sm:w-40">
-
+		<img src="<?= base_url('assets/ilustrations/tema1/sampul_ils1.png') ?>" class="absolute opacity-80 w-14 2xs:w-20 sm:w-40">
 		<div class="absolute left-[35vw] top-5 hidden lg:block">
 			<div class="flex">
 				<div class="border border-tema1-teal/50 bg-tema1-pink/50 -rotate-45  h-10 w-2 rounded-xl -mr-8"></div>
@@ -248,13 +246,32 @@
 		</div>
 
 		<div class="flex justify-center">
-
 			<div class="">
-				<h1 class="mt-8 2xs:mt-12 sm:mt-14 lg:mt-16 font-KalunaScriptDemo text-3xl 2xs:text-4xl sm:text-6xl lg:text-4xl text-tema1-dark-green">The Wedding Of</h1>
+				<h1 class="mt-8 2xs:mt-12 sm:mt-14 lg:mt-8 font-KalunaScriptDemo text-3xl 2xs:text-4xl sm:text-6xl lg:text-4xl text-tema1-dark-green">
+					The Wedding Of
+				</h1>
+				<div>
+					<div class="flex flex-wrap justify-center mt-8 sm:mt-12 lg:mt-8">
+						<div class="w-32 2xs:w-40 sm:w-60 lg:w-36 px-4">
+							<!-- Source cover image -->
+							<img src="<?= base_url('assets/images/cover_250x250.png') ?>" class="shadow-xl rounded-full max-w-full h-auto align-middle border-b-2" />
+						</div>
+					</div>
+					<div class="flex justify-center opacity-80">
+						<!-- Source cover image 2 -->
+						<img src="<?= base_url('assets/ilustrations/tema1/sampul_ils2.png') ?>" class=" -mt-14 2xs:-mt-20 lg:-mt-16 w-40 2xs:w-52 sm:w-64 lg:w-44">
+					</div>
+				</div>
 
 				<div>
-					<h1 class="mt-8 sm:mt-12 lg:mt-8 font-RadicalsDemo text-3xl 2xs:text-4xl sm:text-5xl lg:text-4xl text-tema1-pink tracking-widest">Runa & Ratna</h1>
-					<p class="mt-1 sm:mt-3 text-lg 2xs:text-xl sm:text-3xl lg:text-xl text-tema1-teal font-ShareDong">22 <span class="font-normal text-base-sm 2xs:text-base sm:text-xl lg:text-base-md">Januari </span><span>2022</span></p>
+					<!-- Name groom and bride -->
+					<h1 class="mt-8 sm:mt-12 lg:mt-8 font-RadicalsDemo text-3xl 2xs:text-4xl sm:text-5xl lg:text-4xl text-tema1-pink tracking-widest">
+						Runa & Ratna
+					</h1>
+					<p class="mt-1 sm:mt-3 text-lg 2xs:text-xl sm:text-3xl lg:text-xl text-tema1-teal font-ShareDong">
+						<!-- Wedding Date -->
+						22<span class="font-normal text-base-sm 2xs:text-base sm:text-xl lg:text-base-md">Januari</span><span>2022</span>
+					</p>
 				</div>
 
 				<div class="">
@@ -263,6 +280,7 @@
 							<div class="attribute">
 								<p class="mb-2 lg:mb-0">Kepada Yth</p>
 								<p>Bapak/Ibu/Saudara/I</p>
+								<!-- Guest Name -->
 								<p class="mt-2 lg:mt-0 text-base-xs 2xs:text-base-md sm:text-2xl lg:text-base-md font-semibold">Tegar Kusuma</p>
 							</div>
 						</div>
@@ -272,13 +290,12 @@
 
 				<div class="flex">
 					<a href="#home" onclick="showMainPage()" id="btnOpen" role="button" class="font-MontserratBold font-medium text-white text-base-xs 2xs:text-sm sm:text-xl lg:text-base-xs w-fit bg-tema1-teal hover:bg-teal-700 rounded-xl sm:rounded-2xl lg:rounded-xl mx-auto transition delay-150 animate-bounce flex justify-center mt-8 mb-8 sm:mt-16 lg:mt-8 px-8 lg:px-8 py-1.5 2xs:py-2.5 sm:py-4 lg:py-1" data-role="link">
-						<div class="flex"> <img src="<?= base_url() ?>assets/icons/tema1/cover_icon_unlock.svg" alt="" class="mr-3 w-3">
+						<div class="flex"> <img src="<?= base_url('assets/icons/tema1/cover_icon_unlock.svg') ?>" alt="unlock" class="mr-3 w-3">
 							<p>Buka Undangan</p>
 						</div>
 					</a>
 				</div>
 			</div>
-
 		</div>
 
 
@@ -296,8 +313,8 @@
 			</div>
 		</div>
 
-
-		<img src="<?= base_url() ?>assets/ilustrations/tema1/sampul_ils3.png" class="absolute right-0 opacity-80 -mt-32 sm:-mt-44 lg:bottom-0 w-14 2xs:w-20 sm:w-40">
+		<!-- Source sampul image -->
+		<img src="<?= base_url('assets/ilustrations/tema1/sampul_ils3.png') ?>" class="absolute right-0 opacity-80 -mt-32 sm:-mt-44 lg:bottom-0 w-14 2xs:w-20 sm:w-40">
 	</div>
 	<!-- Sampul End-->
 
@@ -310,11 +327,12 @@
 					<div class="lg:w-[50vw] lg:mr-5 lg:h-screen lg:relative absolute bottom-[6vh]" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic" data-aos-duration="500">
 						<div class="flex">
 							<div class="hidden lg:block">
-								<img src="<?= base_url() ?>assets/ilustrations/tema1/cover_flower1.png" alt="" class="w-40">
+								<img src="<?= base_url('assets/ilustrations/tema1/cover_flower1.png') ?>" alt=".." class="w-40">
 							</div>
 
 							<div class="items-center justify-center bg-pink-100/10 lg:bg-tema1-pink/5 border border-white/50 lg:border-tema1-pink/70 w-44 h-36 2xs:w-56 2xs:h-48 md:w-80 md:h-64 lg:w-64 lg:h-52 rounded-lg text-center mx-auto mt-[21vh] shadow-tema1-pink/80 shadow-sm">
 								<div class="bg-white lg:bg-tema1-teal/5  bg-opacity-10 border border-white/20 lg:border-tema1-teal/70 w-full h-full my-auto rounded-lg text-center mx-auto -rotate-12 font-RadicalsDemo text-3xl 2xs:text-5xl sm:text-5xl md:text-[68px] lg:text-5xl text-white/70 lg:text-tema1-pink tracking-widest shadow-[#1774f554] shadow-sm">
+									<!-- Groom and bride name -->
 									<div class="mt-4 rotate-12 tracking-widest text-shadow-tema1 lg:text-shadow-none">
 										<p class="mb-2">Runa</p>
 										<p class="mb-2">&</p>
@@ -323,12 +341,12 @@
 								</div>
 							</div>
 							<div class="hidden lg:block">
-								<img src="<?= base_url() ?>assets/ilustrations/tema1/cover_flower2.png" alt="" class="w-40">
+								<img src="<?= base_url('assets/ilustrations/tema1/cover_flower2.png') ?>" alt="..." class="w-40">
 							</div>
 						</div>
 						<div class="flex">
 							<div class="hidden lg:block absolute bottom-0">
-								<img src="<?= base_url() ?>assets/ilustrations/tema1/cover_flower5.png" alt="" class="w-20">
+								<img src="<?= base_url('assets/ilustrations/tema1/cover_flower5.png') ?>" alt="..." class="w-20">
 							</div>
 
 							<div class="border border-white/20 w-fit mx-auto px-8 py-2 md:pb-8 lg:py-5 rounded-xl lg:rounded-3xl mt-14 md:mt-24 lg:mt-16 text-pink-100/80 bg-pink-50/10 lg:text-tema1-teal lg:border-tema1-teal/70 lg:bg-tema1-pink/5 font-light font-ShareDong">
@@ -354,14 +372,14 @@
 								</div>
 							</div>
 							<div class="hidden lg:block absolute bottom-0 right-0">
-								<img src="<?= base_url() ?>assets/ilustrations/tema1/cover_flower6.png" alt="" class="w-20">
+								<img src="<?= base_url('assets/ilustrations/tema1/cover_flower6.png') ?>" alt="" class="w-20">
 							</div>
 						</div>
 					</div>
 					<div class="hidden lg:flex ml-5 w-[50vw] justify-center items-center" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-						<div> <img src="<?= base_url() ?>assets/ilustrations/tema1/cover_flower4.png" alt="" class="w-20"></div>
+						<div> <img src="<?= base_url('assets/ilustrations/tema1/cover_flower4.png') ?>" alt="" class="w-20"></div>
 						<div class="shadow-md shadow-tema1-pink rounded-[40px]"><img src="<?= base_url() ?>assets/images/foto_cover_full.jpg" alt="" class="w-96 my-auto border-2 border-tema1-dark-green rounded-[40px]"></div>
-						<div> <img src="<?= base_url() ?>assets/ilustrations/tema1/cover_flower3.png" alt="" class="w-20"></div>
+						<div> <img src="<?= base_url('assets/ilustrations/tema1/cover_flower3.png') ?>" alt="" class="w-20"></div>
 					</div>
 				</div>
 			</div>
@@ -378,35 +396,51 @@
 		<section class="lg:-mt-5 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100 via-[#ebeeee] to-[#ebeeee] pb-8 pt-8 lg:pt-0 px-6 1xs:px-16 md:px-24 lg:px-72" id="sambutan">
 			<div class="flex justify-center items-center text-center">
 				<div class="">
-					<div class="hidden lg:block"><img class="w-24 lg:w-64 absolute -left-3 lg:-left-10 opacity-70" src="<?= base_url() ?>assets/ilustrations/tema1/sambutan_flower1.png" alt=""></div>
+					<div class="hidden lg:block">
+						<img class="w-24 lg:w-64 absolute -left-3 lg:-left-10 opacity-70" src="<?= base_url('assets/ilustrations/tema1/sambutan_flower1.png') ?>" alt="">
+					</div>
 				</div>
 				<div class="text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 text-slate-900">
-					<div class="flex" data-aos="zoom-in" data-aos-duration="1000"><img src="<?= base_url() ?>assets/icons/tema1/sambutan_bismillah.svg" class="mx-auto mb-4 md:mb-7 w-[160px] 2xs:w-[180px] 1xs:w-[210px] md:w-[260px] lg:w-[250px]" alt=""></div>
+					<div class="flex" data-aos="zoom-in" data-aos-duration="1000"><img src="<?= base_url('assets/icons/tema1/sambutan_bismillah.svg') ?>" class="mx-auto mb-4 md:mb-7 w-[160px] 2xs:w-[180px] 1xs:w-[210px] md:w-[260px] lg:w-[250px]" alt=""></div>
 					<h1 class=" mb-5 md:mb-7 opacity-95 font-MontserratBold text-base-md 1xs:text-md md:text-3xl lg:text-xl text-black" data-aos="zoom-in" data-aos-duration="1000">Assalamu’alaikum warahmatullahi wabarakatuh</h1>
 					<p class="text-justify lg:text-center" data-aos="zoom-in" data-aos-duration="1000">
 						Maha Suci Allah SWT yang telah menciptakan Mahluknya berpasang-pasangan, ya Alloh semoga ridho-mu tercurah mengiringi pernikahan putra-putri kami :
 					</p>
+					<div class="flex" data-aos="zoom-in" data-aos-duration="1000">
+						<!-- Groom image -->
+						<img src="<?= base_url('assets/images/mempelai_pria_fix.png') ?>" alt="groom_image" class="w-[80px] 1xs:w-[120px] lg:w-[130px] xl:w-[140px] mx-auto mt-3 md:mt-8 rounded-full">
+					</div>
 					<div class="text-center font-semibold mt-5 lg:mt-10 font-RadicalsDemo tracking-widest text-2xl 2xs:text-3xl sm:text-4xl md:text-[55px] lg:text-4xl text-tema1-pink" data-aos="zoom-in" data-aos-duration="1000">
+						<!-- Groom name -->
 						<p class="">Runa Vha Ningit</p>
 					</div>
 					<div class="flex " data-aos="zoom-in" data-aos-duration="1000">
+						<!-- Account IG groom -->
 						<a target="_blank" href="https://www.instagram.com/runvhan/" class="mx-auto my-3 md:my-5 lg:my-3 opacity-70 ho90r:bg-pink-300 hover:opacity-100">
-							<img class="w-5 md:w-8 lg:w-6" src="<?= base_url() ?>assets/icons/tema1/sambutan_insta.svg" alt="">
+							<img class="w-5 md:w-8 lg:w-6" src="<?= base_url('assets/icons/tema1/sambutan_insta.svg') ?>" alt="">
 						</a>
 					</div>
 					<p class="font-MontserratBold" data-aos="zoom-in" data-aos-duration="1000">
+						<!-- Groom parent -->
 						Putra Kedua Bpk. Iwan Yuli Widianto & Ibu Heny Margarini
 					</p>
 					<p class="font-MontserratBold opacity-80 mt-5 md:mt-8 text-sm 2xs:text-base-md md:text-[30px] lg:text-lg " data-aos="zoom-in" data-aos-duration="1000">dengan</p>
+					<div class="flex" data-aos="zoom-in" data-aos-duration="1000">
+						<!-- Bride image -->
+						<img src="<?= base_url('assets/images/mempelai_wanita_fix.png') ?>" alt="" class="mx-auto mt-3 md:mt-8 w-[80px] 1xs:w-[120px] lg:w-[130px] xl:w-[140px]">
+					</div>
 					<div class="text-center font-semibold mt-5 lg:mt-10 font-RadicalsDemo tracking-widest text-2xl 2xs:text-3xl sm:text-4xl md:text-[55px] lg:text-4xl text-tema1-pink" data-aos="zoom-in" data-aos-duration="1000">
+						<!-- bride name -->
 						<p class="">Ratna Sari Astuti</p>
 					</div>
 					<div class="flex " data-aos="zoom-in" data-aos-duration="1000">
+						<!-- Account IG bride -->
 						<a target="_blank" href="https://www.instagram.com/ratnasariastt/" class="mx-auto my-3 md lg:my-3:my-8 opacity-90 hover:bg-pink-300 hover:opacity-100">
-							<img class="w-5 md:w-8 lg:w-6" src="<?= base_url() ?>assets/icons/tema1/sambutan_insta.svg" alt="">
+							<img class="w-5 md:w-8 lg:w-6" src="<?= base_url('assets/icons/tema1/sambutan_insta.svg') ?>" alt="">
 						</a>
 					</div>
 					<p class="font-MontserratBold" data-aos="zoom-in" data-aos-duration="1000">
+						<!-- bride parent -->
 						Putri Kedua Bpk. Kifi Norhasis & Ibu Rumiati
 					</p>
 					<p class="mt-5 md:mt-8" data-aos="zoom-in" data-aos-duration="1000">
@@ -414,7 +448,7 @@
 					</p>
 				</div>
 				<div class="">
-					<div class=""><img class="hidden lg:block w-24 lg:w-64 absolute -right-3 lg:-right-10 opacity-70" src="<?= base_url() ?>assets/ilustrations/tema1/sambutan_flower2.png" alt=""></div>
+					<div class=""><img class="hidden lg:block w-24 lg:w-64 absolute -right-3 lg:-right-10 opacity-70" src="<?= base_url('assets/ilustrations/tema1/sambutan_flower2.png') ?>" alt=""></div>
 				</div>
 			</div>
 		</section>
@@ -432,8 +466,8 @@
 				<div class="pt-8 lg:pt-28" id="objekResepsi">
 					<!-- Flower Top -->
 					<div class="hidden lg:block">
-						<img class="-mt-32 absolute w-14 md:w-20 lg:w-40 left-14" src="<?= base_url() ?>assets/ilustrations/tema1/resepsi_flower6.svg" />
-						<img class="-mt-32 absolute w-14 md:w-20 lg:w-40 right-14 rotate-90" src="<?= base_url() ?>assets/ilustrations/tema1/resepsi_flower6.svg" />
+						<img class="-mt-32 absolute w-14 md:w-20 lg:w-40 left-14" src="<?= base_url('assets/ilustrations/tema1/resepsi_flower6.svg') ?>" />
+						<img class="-mt-32 absolute w-14 md:w-20 lg:w-40 right-14 rotate-90" src="<?= base_url('assets/ilustrations/tema1/resepsi_flower6.svg') ?>" />
 					</div>
 					<!-- Flower Top -->
 
@@ -441,7 +475,7 @@
 					<div class="lg:flex lg:gap-x-6">
 						<!-- Card Tasyakuran -->
 						<div class="lg:w-[27vw] mt-5 md:mt-8 items-center border border-tema1-teal/40 shadow-sm shadow-tema1-teal/80 rounded-2xl lg:rounded-3xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100/80 via-[#ebeeee] to-[#f4f5f5]" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-							<img class=" absolute w-14 md:w-20 lg:w-14 opacity-80 right-5 1xs:right-16 md:right-24 lg:left-[30vw]" src="<?= base_url() ?>assets/ilustrations/tema1/resepsi_flower2.svg" />
+							<img class=" absolute w-14 md:w-20 lg:w-14 opacity-80 right-5 1xs:right-16 md:right-24 lg:left-[30vw]" src="<?= base_url('assets/ilustrations/tema1/resepsi_flower2.svg') ?>" />
 							<div class="pt-3 pb-5 px-3 md:pt-8 md:pb-8 lg:px-3  font-semibold text-base-xs 2xs:text-base-sm md:text-[26px]  lg:text-base-md text-slate-900/90 tracking-wider">
 								<h1 class=" mb-3 md:mb-8 font-MontserratBold text-base 2xs:text-md 1xs:text-tiny md:text-[30px] lg:text-xl">Tasyakuran</h1>
 								<p class="mb-1 text-slate-800">Jum'at, 21 Oktober 2022</p>
@@ -461,7 +495,7 @@
 						<!-- Card Tasyakuran End -->
 						<!-- Card Akad -->
 						<div class="lg:w-[27vw] mt-5 md:mt-8 items-center border border-tema1-teal/40 shadow-sm shadow-tema1-teal/80 rounded-2xl lg:rounded-3xl  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100/80 via-[#ebeeee] to-[#f4f5f5]" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-							<img class=" absolute w-12 md:w-[70px] lg:w-[44px] opacity-80 right-4 1xs:right-14 md:right-[88px] lg:right-[36vw]" src="<?= base_url() ?>assets/ilustrations/tema1/resepsi_flower3.svg" />
+							<img class=" absolute w-12 md:w-[70px] lg:w-[44px] opacity-80 right-4 1xs:right-14 md:right-[88px] lg:right-[36vw]" src="<?= base_url('') ?>assets/ilustrations/tema1/resepsi_flower3.svg" />
 							<div class="pt-3 pb-5 px-3 md:pt-8 md:pb-8 lg:px-3  font-semibold text-base-xs 2xs:text-base-sm md:text-[26px]  lg:text-base-md text-slate-900/90 tracking-wider">
 								<h1 class=" mb-3 md:mb-8 font-MontserratBold text-base 2xs:text-md 1xs:text-tiny md:text-[30px] lg:text-xl">Akad</h1>
 								<p class="mb-1 text-slate-800">Jum'at, 21 Oktober 2022</p>
@@ -519,14 +553,144 @@
 			</svg>
 		</div>
 
+		<!-- Galery Foto -->
+		<section class="-mt-5 md:-mt-10 lg:-mt-20 pb-32 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100 via-[#ebeeee] to-[#ebeeee]" id="galeriFoto">
+			<div class="relative" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+				<img class="mx-auto w-[120px] h-[16px] lg:h-[20px] lg:w-[150px] mt-3" src="<?= base_url() ?>assets/icons/tema1/bg_title_foto.png " />
+				<h1 class="absolute font-RadicalsDemo tracking-widest text-xl 2xs:text-2xl 1xs:text-3xl sm:text-4xl md:text-5xl lg:text-3xl top-[10%] left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80 mt-3">
+					Galeri Foto</h1>
+			</div>
+
+			<div class="border border-tema1-teal/40 shadow-sm shadow-tema1-teal/80 pb-3 md:pb-5 mt-10 lg:pt-10 pt-5 md:pt-8 rounded-2xl lg:rounded-3xl relative bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-100/80 via-[#ebeeee] to-[#f4f5f5] mx-6 1xs:mx-16 md:mx-24  px-4 md:px-8 lg:px-16" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1000">
+				<img class="h-6 absolute right-1/4 -top-3 opacity-60 lg:h-8 lg:-top-4" src="<?= base_url() ?>assets/icons/tema1/galeri_pin_foto.png" />
+				<img class="h-6 absolute left-1/4 -top-3 opacity-60 lg:h-8 lg:-top-4" src="<?= base_url() ?>assets/icons/tema1/galeri_pin_foto.png" />
+
+				<div class="columns-2 gap-x-2 lg:gap-x-4 md:columns-5xs lg:columns-4xs xl:columns-3xs" id="objekFoto">
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300  aspect-w-5 aspect-h-3  mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_1.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_1.png">
+					</div>
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300 aspect-w-4 aspect-h-5 mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_2.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_2.png">
+					</div>
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300 aspect-w-5 aspect-h-3 mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_3.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_3.png">
+					</div>
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300 aspect-w-4 aspect-h-5 mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_4.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_4.png">
+					</div>
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300 aspect-w-4 aspect-h-5 mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_5.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_5.png">
+					</div>
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300 aspect-w-5 aspect-h-3 mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_6.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_6.png">
+					</div>
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300 aspect-w-4 aspect-h-5 mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_7.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_7.png">
+					</div>
+					<div class="modal-foto-open hover:contrast-50 hover:saturate-200 hover:shadow-xl  transition duration-300 aspect-w-5 aspect-h-3 mb-2 xl:mb-3">
+						<img class="w-full  rounded-2xl view-photo border cursor-pointer hover:border-2 hover:border-blue-400" src="<?= base_url() ?>assets/images/foto_8.png" alt="photo" data-magnify="gallery" data-src="<?= base_url() ?>assets/images/foto_8.png">
+					</div>
+				</div>
+
+				<div class="mb-2">
+					<div class="flex justify-center content-center mt-1 cursor-pointer">
+						<img class=" h-[20px] xs:h-[30] lg:h-[35px] opacity-70" src="<?= base_url() ?>assets/icons/tema1/galeri_antena_video.svg" alt="photo">
+					</div>
+					<div class="flex justify-center content-center ">
+						<video class="gdriveVideo md:h-72 rounded-2xl view-photo cursor-pointer" preload="auto" controls poster="<?= base_url() ?>assets/images/foto_tumbnail_video.jpg">
+							<source src="https://drive.google.com/uc?export=download&id=1-zNYEW_2Hoc7CIhmqbZuxi3HPiAjwh4S" type='video/mp4'>
+						</video>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+		<!-- Galery Foto End -->
+
 		<div class="cover-shape -mt-32 lg:-mt-48">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path fill="#ead2fc" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,144C384,139,480,117,576,128C672,139,768,181,864,192C960,203,1056,181,1152,176C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
 			</svg>
 		</div>
 
+		<!-- Perjalanan Cinta -->
+		<div class="bg-[#ead2fc] -mt-5 mb-5 lg:pt-0" id="perjalananCinta">
+			<div class="">
+				<div class="relative" data-aos="zoom-in" data-aos-duration="1000">
+					<img class="mx-auto w-[140px] h-[16px] opacity-80 lg:h-[20px] lg:w-[170px] " src="<?= base_url() ?>assets/icons/tema1/bg_title_foto.png " />
+					<h1 class="absolute font-RadicalsDemo tracking-widest text-xl 2xs:text-2xl 1xs:text-3xl sm:text-4xl md:text-5xl lg:text-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+						Perjalanan Cinta</h1>
+				</div>
+				<div class="absolute right-5 w-16 2xs:w-20 1xs:2-28 sm:w-32 md:-w-36 lg:w-40 xl:hidden">
+					<img src="<?= base_url() ?>assets/ilustrations/tema1/percin_ilus1_sm.svg" alt="ils percin" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500">
+				</div>
+			</div>
+
+			<div class="pt-8 mt-10 pb-8 lg:pt-10 relative">
+				<div class="xl:flex mx-6 1xs:mx-16 md:mx-24">
+					<div class="xl:mr-8 xl:w-2/3" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500">
+						<ol class="relative border-l border-tema1-pink/50 ml-2">
+							<li class="mb-10 lg:mb-14 ml-8">
+								<div class="relative border border-tema1-pink/40 shadow-sm shadow-tema1-pink/60 rounded-2xl lg:rounded-3xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100/80 via-[#f5f3ec] to-[#f4f5f5]">
+									<div class="absolute border bg-pink-100 border-tema1-pink/40 shadow-sm shadow-tema1-pink/60 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 text-tema1-teal tracking-widest font-semibold px-3 py-1 rounded-3xl left-1/2 transform -translate-x-1/2 -translate-y-1/2 -top-1">Kisah 1</div>
+									<div class="mt-3">
+										<div class="absolute w-7 h-7 text-tema1-teal bg-gradient-to-b from-tema1-pink/40 v4a-pink-200 to-pink-100 rounded-full -left-12 border border-tema1-pink/60">
+											<p class="font-MontserratBold font-bold ml-2">1</p>
+										</div>
+										<div class="story mx-3">
+											<time class="my-4 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 font-normal leading-none text-tema1-teal">February 2022</time>
+											<p class="mb-4 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 font-normal text-slate-800 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates praesentium voluptatem cupiditate repellendus quis, modi facilis dignissimos. Earum perspiciatis quam iure amet recusandae veniam officia, natus eaque rem nobis cupiditate?</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mb-10 lg:mb-14 ml-8">
+								<div class="relative border border-tema1-pink/40 shadow-sm shadow-tema1-pink/60 rounded-2xl lg:rounded-3xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100/80 via-[#f5f3ec] to-[#f4f5f5]">
+									<div class="absolute border bg-pink-100 border-tema1-pink/40 shadow-sm shadow-tema1-pink/60 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 text-tema1-teal tracking-widest font-semibold px-3 py-1 rounded-3xl left-1/2 transform -translate-x-1/2 -translate-y-1/2 -top-1">Kisah 2</div>
+									<div class="mt-3">
+										<div class="absolute w-7 h-7 text-tema1-teal bg-gradient-to-b from-tema1-pink/40 via-pink-200 to-pink-100 rounded-full -left-12 border border-tema1-pink/60">
+											<p class="font-MontserratBold font-bold ml-2">2</p>
+										</div>
+										<div class="story mx-3">
+											<time class="my-4 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 font-normal leading-none text-tema1-teal">February 2022</time>
+											<p class="mb-4 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 font-normal text-slate-800 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates praesentium voluptatem cupiditate repellendus quis, modi facilis dignissimos. Earum perspiciatis quam iure amet recusandae veniam officia, natus eaque rem nobis cupiditate?</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="ml-8">
+								<div class="relative border border-tema1-pink/40 shadow-sm shadow-tema1-pink/60 rounded-2xl lg:rounded-3xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100/80 via-[#f5f3ec] to-[#f4f5f5]">
+									<div class="absolute border bg-pink-100 border-tema1-pink/40 shadow-sm shadow-tema1-pink/40 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 text-tema1-teal tracking-widest font-semibold px-3 py-1 rounded-3xl left-1/2 transform -translate-x-1/2 -translate-y-1/2 -top-1">Kisah 3</div>
+									<div class="mt-3">
+										<div class="absolute w-7 h-7 text-tema1-teal bg-gradient-to-b from-tema1-pink/40 via-pink-200 to-pink-100 rounded-full -left-12 border border-tema1-pink/60">
+											<p class="font-MontserratBold font-bold ml-2">3</p>
+										</div>
+										<div class="story mx-3">
+											<time class="my-4 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 font-normal leading-none text-tema1-teal">February 2022</time>
+											<p class="mb-4 text-base-xs 2xs:text-base-sm 1xs:text-base-md md:text-[26px] lg:text-base lg:leading-6 font-normal text-slate-800 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates praesentium voluptatem cupiditate repellendus quis, modi facilis dignissimos. Earum perspiciatis quam iure amet recusandae veniam officia, natus eaque rem nobis cupiditate?</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ol>
+					</div>
+					<div class="hidden xl:block" data-aos="zoom-out-down" data-aos-duration="1000">
+						<img src="<?= base_url() ?>assets/ilustrations/tema1/percin_ilus1.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Perjalanan Cinta End-->
+
+		<div class="cover-shape -mt-16 lg:-mt-48">
+			<svg xmlns="http://www.w3.org/2000/svg" class="bg-[#f5f1ec]" viewBox="0 0 1440 320">
+				<path fill="#ead2fc" fill-opacity="1" d="M0,192L120,197.3C240,203,480,213,720,213.3C960,213,1200,203,1320,197.3L1440,192L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+			</svg>
+		</div>
+
 		<!-- Pesan Bahagia -->
-		<section class="bg-[#ead2fc] -mt-5 lg:-mt-20 lg:pb-12" id="pesanBahagia">
+		<section class="bg-[#f5f1ec] -mt-5 lg:-mt-20 lg:pb-12" id="pesanBahagia">
 			<div class="relative my-4 lg:my-12 pt-8 lg:pt-0 lg:pb-8" data-aos="zoom-in" data-aos-duration="1000">
 				<img class="mx-auto w-[140px] h-[16px] lg:h-[20px] lg:w-[170px]" src="<?= base_url() ?>assets/icons/tema1/bg_title_foto.png " />
 				<h1 class="absolute font-RadicalsDemo tracking-widest text-xl 2xs:text-2xl 1xs:text-3xl sm:text-4xl md:text-5xl lg:text-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80">
@@ -614,7 +778,7 @@
 		</section>
 		<!-- Pesan Bahagia End-->
 
-		<footer class="p-4 bg-slate-100 rounded-t-3xl shadow md:px-2 md:py-4 xl:mt-0">
+		<footer class="p-4 bg-violet-200 rounded-t-3xl shadow md:px-2 md:py-4 xl:mt-0">
 			<div class="mb-14 md:mb-20 flex justify-center items-center">
 				<div class="flex ml-3 text-base-1xs 2xs:text-base-xs 1xs:text-base-sm md:text-[22px] lg:text-base">
 					<div class="flex justify-center items-center w-1/2 mr-5">
@@ -837,11 +1001,6 @@
 		</div>
 	</div>
 
-
-
-
-
-
 	<script>
 		// Play Song 
 		const song = document.getElementById("song");
@@ -850,11 +1009,11 @@
 		iconMusic.onclick = function() {
 			if (song.paused) {
 				song.play();
-				iconMusic.src = "<?= base_url() ?>assets/icons/tema1/floating_music_play.svg"
+				iconMusic.src = "<?= base_url('assets/icons/tema1/floating_music_play.svg') ?>"
 				iconMusic.classList.add('animate-spin-slow')
 			} else {
 				song.pause();
-				iconMusic.src = "<?= base_url() ?>assets/icons/tema1/floating_music_paused.svg"
+				iconMusic.src = "<?= base_url('assets/icons/tema1/floating_music_paused.svg') ?>"
 				iconMusic.classList.remove('animate-spin-slow')
 			}
 		}
